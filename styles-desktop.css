@@ -1,0 +1,57 @@
+/***SECTION MAIN***/
+.main {
+    margin: 0 auto;
+    padding: 0;
+    width: 1366px;
+    max-width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main__container {
+    width: 65%;
+    margin: 0;
+    padding: 0;
+}
+
+.main__button-reload {
+    width: 90%;
+}
+
+/***SECTION UPLOAD***/
+.section-upload {
+    width: 35%;
+}
+
+.section-upload__container {
+    padding: 20px;
+}
+
+/***SECTION MAIN-ASIDE***/
+.main__aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 auto;
+    width: 1366px;
+}
+
+.main__aside article {
+    margin: 0 20px;
+    max-width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

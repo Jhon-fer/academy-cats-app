@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles-mobile.css">
+    <link rel="stylesheet" href="./styles-tablet.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="./styles-desktop.css" media="(min-width: 1366px)">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-container">
+            <a href="#" class="nav-logo">CATS APP</a>
+            <div class="nav-menu">
+                <ul class="nav-menu__ul">
+                    <a href="https://docs.thecatapi.com/" target="_blank" class="nav-menu__ul--link">API DOC</a>
+                    <a href="#" class="nav-menu__ul--link">GITHUB REPO</a>
+                    <a href="#" class="nav-menu__ul--link">PJ NETLIFY COMING SOON</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <span id="spanError"></span>
+    <span id="spanMessage"></span>
+
+    <section class="main">
+        <div class="main__container">    
+            <h2 class="main--title title">Imágenes Aleatorias</h2>
+            
+            <div class="main__card--container">
+                <article class="main__card">
+                    <img id="img1" class="main__card--img">
+                    <button id="button1" class="main__card--save-button button">Guardar en Favoritos</button>
+                </article>
+                
+                <article class="main__card">
+                    <img id="img2" class="main__card--img">
+                    <button id="button2" class="main__card--save-button button">Guardar en Favoritos</button>
+                </article>
+                
+                <article class="main__card">
+                    <img id="img3" class="main__card--img">
+                    <button id="button3" class="main__card--save-button button">Guardar en Favoritos</button>
+                </article>
+                
+                <article class="main__card">
+                    <img id="img4" class="main__card--img">
+                    <button id="button4" class="main__card--save-button button">Guardar en Favoritos</button>
+                </article>
+            </div>
+            
+            <button id="reload" class="main__button-reload button">Cambiar Imágenes</button> 
+        </div>
+
+        <section id="uploadImage" class="section-upload">
+            <div class="section-upload__container">
+                <h2 class="section-upload--title title">Sube la Foto de tu Gatito</h2>
+                <form id="uploadForm" class="section-upload__form">
+                    <input id="file" type="file" name="file" class="section-upload__form--input"><br><br>
+                    <button type="button" onclick="uploadImageCat()" class="section-upload__form--button button">Subir Foto</button>
+                </form>
+            </div>
+        </section>
+        
+    </section>
+    
+    <section id="favoriteImages" class="main__aside">
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <p>Built By Jhon Rios For Academy</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./main.js"></script>
+</body>
+</html>

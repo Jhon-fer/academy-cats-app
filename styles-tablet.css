@@ -1,0 +1,66 @@
+/***NAVIGATOR***/
+.nav-menu__ul--link {
+    padding: 10px 50px;
+}
+
+/***SECTION MAIN***/
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 768px;
+}
+
+.main__card--container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main__card {
+    width: 50%;
+}
+
+.main__card--img {
+    width: 300px;
+    height: 300px;
+}
+
+/***SECTION UPLOAD***/
+.section-upload {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/***SECTION MAIN-ASIDE***/
+.main__aside {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 auto;
+    width: 768px;
+    padding: 0;
+}
+
+.main__aside h2 {
+    width: 100%;
+}
+
+.main__aside article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.main__aside article img { 
+    width: 300px;
+    height: 300px;
+}
+
+
+
+
